@@ -36,6 +36,8 @@ video file is not provided for reason of space.
 Once runned, ParkAssistant shows the initialization situation for 10 seconds, than
 it starts with the real time acquisition.
 
+![alt text](https://raw.github.com/MatteoRagni/ParkAssistant/master/doc/src/img/ICbuffer.png "Example runtime response")
+
 ### The Utility ###
 The utility is used to calibrate the position of the parking spots, using the mouse 
 directly on the image. The left button of the mouse (4 consecutive clicks) are used
