@@ -1,0 +1,46 @@
+MATTEO RAGNI 161822
+
+----------------------------
+Homework 2 - Computer vision
+----------------------------
+
+Installation
+------------
+
+Simply compile the whole project with the provided Makefile.
+The makefile is written for Debian based Linux distribution.
+OpenCV libraries are required to compile the project (libopencv-dev).
+To install opencv libreries just type in a root console:
+
+apt-get install libopencv-dev
+
+From the root folder of the project, type
+
+make
+
+to create executables file. 
+
+
+Run
+---
+
+* Park Assistant
+In this project only the main application and the first utility are provided
+The main application, named ParkAssistant must be runned with two arguments:
+
+./ParkAssistant configuration_file.yml video_file.avi [ffwd >= 1]
+
+a configuration file is provided under the name of sample_configuration.yml. The
+video file is not provided for reason of space.
+
+Once runned, ParkAssistant shows the initialization situation for 10 seconds, than
+it starts with the real time acquisition.
+
+* The Utility
+The utility is used to calibrate the position of the parking spots, using the mouse 
+directly on the image. The left button of the mouse (4 consecutive clicks) are used
+to generate the polylines, while two consecutive right clicks are used to draw 
+a rect. The utility should be launched as it follows:
+
+./utility video_file.avi frame_number
+

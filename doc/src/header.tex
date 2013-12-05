@@ -1,0 +1,52 @@
+\documentclass{llncs}
+
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage{float}
+\usepackage[unicode=true,bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false]{hyperref}
+\hypersetup{pdftitle={Park Assistant}, pdfauthor={Matteo Ragni -
+161822},pdfsubject={Homework 02}}
+
+\usepackage{amsmath}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=C++,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+
+% Definitions of newcommand
+
+% Insert a new figure in the document, inside a float.
+\newcommand{\fig}[4]{
+	% /fig{image file}{caption}{scaling factor}{label name} 
+	% 1 - FILE IMAGE										
+	% 2 - CAPTION OF THE IMAGE								
+	% 3 - SCALING FACTOR									
+	% 4 - LABEL NAME										
+	\begin{figure}[H] \label{#4}
+		\centering
+		\includegraphics[keepaspectratio, scale=#3]{#1}
+		\caption{#2}
+	\end{figure}
+}
+
+
