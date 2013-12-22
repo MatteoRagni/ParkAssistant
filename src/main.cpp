@@ -10,7 +10,7 @@
 
 int main(int argc, char** argv){
 
-	/* Aquisizione dei valori dalla riga di comando */
+	/* Acquisizione dei valori dalla riga di comando */
 	if (argc < 2) {
 		cout << "ParkAssistant configuration_file.yml video.avi [fast_forward_scale - mandatory]" << endl;
 		return 1;
